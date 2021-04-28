@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+        <siteMapNode url="~/Topics.aspx" title="رفع اشکال"  description="" >
+           <siteMapNode url="" title="خودپرداز"  description="" >
+             <siteMapNode url="~/logs.aspx?type=ATMhardware" title="سخت افزار"  description="" />
+             <siteMapNode url="~/logs.aspx?type=ATMsoftware" title="نرم افزار"  description="" />
+           </siteMapNode>
+          
+          <siteMapNode url="" title="شبکه"  description="" >
+             <siteMapNode url="~/logs.aspx?type=NETWORKvnb" title="وی ان بی"  description="" />
+             <siteMapNode url="~/logs.aspx?type=NETWORKvsat" title="وی ست"  description="" />
+             <siteMapNode url="~/logs.aspx?type=NETWORKaryasat" title="آریاست"  description="" />
+             <siteMapNode url="~/logs.aspx?type=NETWORKaryagate" title="آریاگیت"  description="" />
+           </siteMapNode>
+          
+        <siteMapNode url="" title="آنلاین"  description="" >
+             <siteMapNode url="~/logs.aspx?type=ONLINElinux" title="لینوکس"  description="" />
+             <siteMapNode url="~/logs.aspx?type=ONLINEprinter" title="پرینتر"  description="" />
+             <siteMapNode url="~/logs.aspx?type=ONLINEbankIran" title="بانک ایران"  description="" />
+             
+           </siteMapNode>
+      
+         </siteMapNode>
+      
+     <siteMapNode url="" title="پروژه"  description="" >
+           <siteMapNode url="" title="خودپرداز"  description="" >
+             <siteMapNode url="~/projects.aspx?type=ATMhardware" title="سخت افزار"  description="" />
+             <siteMapNode url="~/projects.aspx?type=ATMsoftware" title="نرم افزار"  description="" />
+           </siteMapNode>
+          
+          <siteMapNode url="" title="شبکه"  description="" >
+             <siteMapNode url="~/projects.aspx?type=NETWORKvnb" title="وی ان بی"  description="" />
+             <siteMapNode url="~/projects.aspx?type=NETWORKvsat" title="وی ست"  description="" />
+             <siteMapNode url="~/projects.aspx?type=NETWORKaryasat" title="آریاست"  description="" />
+             <siteMapNode url="~/projects.aspx?type=NETWORKaryagate" title="آریاگیت"  description="" />
+           </siteMapNode>
+          
+        <siteMapNode url="" title="آنلاین"  description="" >
+             <siteMapNode url="~/projects.aspx?type=ONLINElinux" title="لینوکس"  description="" />
+             <siteMapNode url="~/projects.aspx?type=ONLINEprinter" title="پرینتر"  description="" />
+             <siteMapNode url="~/projects.aspx?type=ONLINEbankIran" title="بانک ایران"  description="" />
+             
+           </siteMapNode>
+      
+         </siteMapNode>
+        
+    </siteMapNode>
+</siteMap>

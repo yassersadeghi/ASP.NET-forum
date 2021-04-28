@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication7.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl"  >
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" Visible="False">
+        
+        <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />       
+        
+        </asp:ContentPlaceHolder>
+    
+<link href="StyleSheet1.css" rel="stylesheet" type="text/css" /> 
+    <style type="text/css">
+        .centerpannel {
+            background-color: #CCFFCC;
+            bottom:2px;
+        }
+        .rightpannel {
+            background-color: #333300;
+            bottom:2px;
+        }
+    </style>
+
+    
+
+</head>
+    
+<body style="background-color: #FFFFFF; overflow-x:hidden;"  >
+    
+    <form id="form1" runat="server" style="  background-image: none; position: static; top: auto; right: auto; bottom: inherit;" dir="rtl">
+      <asp:ScriptManager runat="server" ID="ScripManager1"></asp:ScriptManager>
+          <div class="haeder">
+
+              <asp:Image ID="Image1" runat="server" ImageUrl="~/im/toplogo.png" />
+
+        </div>
+        <div class="cruchline"></div>
+        
+        <div class="rightpannel" dir="rtl"  >
+
+            <asp:TreeView ID="TreeView1" runat="server" ImageSet="Simple" DataSourceID ="sitedatasource" Height="100%" Font-Bold="True" Font-Italic="False" Font-Size="Small" style="font-family: 'B Nazanin'; font-weight: 700; font-size: small; background-color: #CCFFFF;" Width="96%" NodeIndent="10">
+                <HoverNodeStyle Font-Underline="True"  ForeColor="#DD5555" />
+                <NodeStyle Font-Names="B Lotus" Font-Size="10pt" ForeColor="Black" HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" Font-Bold="True" />
+                <ParentNodeStyle Font-Bold="False" />
+                <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" ForeColor="#DD5555" />
+            </asp:TreeView>
+            <asp:SiteMapDataSource ID="sitedatasource" runat="server" />
+        </div>
+                 
+    <div class="centerpannel" style="background-color: #FFFFFF" >
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"   >
+        
+            
+        
+            
+        
+            
+        
+        </asp:ContentPlaceHolder>
+          
+    </div>
+                  
+        
+        <div class="leftpannel">
+            <table style="width:100%;">
+                <tr style="height:50px;">
+                    <th>
+                        <br />
+                        <asp:LoginName runat="server" ID="loginname1" /> <br />
+                        <asp:LoginStatus ID="lgvw" runat="server" LogoutAction="Redirect" LogoutPageUrl="~/login.aspx" ></asp:LoginStatus>
+
+                        &nbsp;</th>
+                </tr>
+                <tr style="height:30px;">
+                    <th>
+
+                    
+            <br />
+                           <asp:HyperLink runat="server" ID="HyperLink2" ImageUrl="~/im/password.jpg" NavigateUrl="~/changePassword.aspx" ToolTip="تغییر رمز" >تغییر رمز</asp:HyperLink>
+            
+         
+                        </th>
+                </tr>
+                <tr style="height:30px;">
+                    <th>
+
+                    
+            
+            <br />
+                        <asp:HyperLink runat="server" ID="ct" ImageUrl="~/im/add.png"  NavigateUrl="~/CT/CreateTopic.aspx" ToolTip="موضوع جدید">موضوع جدید</asp:HyperLink>
+         
+                        </th>
+                </tr>
+                <tr style="height:30px;">
+                    <th>
+
+                         <br />
+                        <asp:HyperLink runat="server" ID="et" ImageUrl="~/im/edit.png"  NavigateUrl="~/topic/mng.aspx" ToolTip="مدیریت موضوعات">مدیریت موضوعات</asp:HyperLink>
+         
+
+                    </th>
+                    </tr>
+
+
+            </table>
+         
+        </div>
+       
+        
+          
+    </form>
+    
+</body>
+</html>
